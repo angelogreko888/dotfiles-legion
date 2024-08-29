@@ -58,7 +58,7 @@ alias cg='cd ~/git/'
 alias cgg='cd ~/git/gnome/'
 alias ci='cd ~/.config/i3/'
 alias cii='cd ~/.config/i3blocks/'
-alias cdf='cd ~/dotfiles/'
+alias cdf='cd ~/dotfiles-legion/'
 
 
 alias md='mkdir -pv'
