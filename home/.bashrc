@@ -26,7 +26,8 @@ shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=100000
-HISTFILESIZE=2000
+HISTFILESIZE=20000
+export HISTCONTROL=ignoreboth:erasedups
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -122,17 +123,3 @@ if ! shopt -oq posix; then
 fi
 
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;33m\] $\[\033[0m\] ' 
-
-#[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# Set up fzf key bindings and fuzzy completion
-#eval "$(fzf --bash)"
-
-#function yy() {
-#	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-#	yazi "$@" --cwd-file="$tmp"
-#	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-#		cd -- "$cwd"
-#	fi
-#	rm -f -- "$tmp"
-#}

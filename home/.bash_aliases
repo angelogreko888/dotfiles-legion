@@ -8,7 +8,7 @@ fastfetch
 #aliases
 alias spt="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
 
-alias xx='exit'
+alias c='clear'
 alias r='ranger'
 
 alias ui="sudo apt purge -y && sudo apt autoremove -y"
@@ -110,7 +110,6 @@ alias chd='rm -rf ~/.cache/*'
 alias pi='sudo pacman -S --needed '
 alias ps='sudo pacman -Ss'
 alias pud='sudo pacman -Syy'
-alias pup='sudo pacman -Syu'
 alias pui='sudo pacman -Rns'
 alias pac='sudo pacman -Scc'
 alias pl='sudo cat /var/log/pacman.log'
@@ -118,13 +117,12 @@ alias psl='sudo nano /etc/pacman.conf'
 alias pdg='sudo pacman -U'
 alias pm='sudo nano /etc/pacman.d/mirrorlist'
 alias pu='sudo pacman -Syy && sudo pacman -Syu'
-alias po='sudo pacman -R $(pacman -Qdtq)'
 alias pc='sn /etc/pacman.conf'
 alias pq='sudo pacman -Qdtq'
 
 alias y='yay'
 alias yi='yay -S'
 alias ys='yay -Ss'
-alias yup='yay -Syu'
+alias yu='yay -Syy && yay -Syu'
 alias yd='yay -Yc'
 alias yui='yay -Rns'
