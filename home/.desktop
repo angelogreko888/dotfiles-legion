@@ -1,0 +1,1 @@
+exec=env MOZ_ENABLR_WAYLAND=1 firefox

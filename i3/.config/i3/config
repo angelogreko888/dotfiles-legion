@@ -386,6 +386,6 @@ bindsym Ctrl+z scratchpad show
 # Show the sup-mail scratchpad window, if any.
 bindsym $mod+= [title="^Sup ::"] scratchpad show
 
-exec_always picom
+exec_always picom --backend xrender
 
 exec terminator

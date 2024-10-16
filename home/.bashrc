@@ -13,6 +13,8 @@ case $- in
       *) return;;
 esac
 
+
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 #HISTCONTROL=ignoreboth
@@ -123,3 +125,5 @@ if ! shopt -oq posix; then
 fi
 
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h: \[\033[1;36m\]\w\[\033[1;33m\] $\[\033[0m\] ' 
+
+
